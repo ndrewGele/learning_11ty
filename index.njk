@@ -1,0 +1,11 @@
+---
+layout: main
+---
+
+<ul>
+  {% for thing_iter in collections.thing_tag %}
+    <li>
+      <a href="{{ thing_iter.url }}">{{ thing_iter.data.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

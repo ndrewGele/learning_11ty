@@ -1,0 +1,14 @@
+---
+layout: main
+tags: "thing_tag"
+pagination:
+  data: thing_data_file
+  size: 1
+  alias: thing_alias
+  addAllPagesToCollections: true
+permalink: "things/{{ thing_alias.name | slug }}/"
+---
+<p>I am
+  {{ thing_alias.name }}
+  and I am
+  {{ thing_alias.property }}.</p>
